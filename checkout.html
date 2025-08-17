@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MyShop</h1>
+    <nav>
+      <a href="index.html">Products</a>
+      <a href="cart.html">Cart 🛒</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Checkout</h2>
+    <form id="checkout-form" onsubmit="submitOrder(event)">
+      <label>Name: <input type="text" required></label><br>
+      <label>Address: <input type="text" required></label><br>
+      <label>Card Number: <input type="text" required></label><br>
+      <button type="submit">Place Order</button>
+    </form>
+  </main>
+
+  <script>
+    function submitOrder(e) {
+      e.preventDefault();
+      alert("Order placed successfully!");
+      localStorage.removeItem("cart");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

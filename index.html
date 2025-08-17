@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MyShop</h1>
+    <nav>
+      <a href="index.html">Products</a>
+      <a href="cart.html">Cart 🛒</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Products</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="images/Handbags.jpg" alt="Product 1">
+        <h3>Handbags</h3>
+        <p>₹499</p>
+        <button onclick="addToCart('Product 1', 499)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/Layered Chain Necklace.webp" alt="Product 2">
+        <h3>Layered Chain</h3>
+        <p>₹799</p>
+        <button onclick="addToCart('Product 2', 799)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/Perfumes.jpg" alt="Product 2">
+        <h3>Perfumes</h3>
+        <p>₹600</p>
+        <button onclick="addToCart('Product 2', 799)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/Sandals.jpeg" alt="Product 2">
+        <h3>Sandals</h3>
+        <p>₹399</p>
+        <button onclick="addToCart('Product 2', 799)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/sunglasses.jpg" alt="Product 2">
+        <h3>Sun Glasses</h3>
+        <p>₹200</p>
+        <button onclick="addToCart('Product 2', 799)">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
